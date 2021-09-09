@@ -1,0 +1,140 @@
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+body {
+    min-height: 100vh;
+    background: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: $paleBlue;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.button {
+    background-color: $brightBlue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    filter: brightness(2);
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-900 {
+    font-weight: 900;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    max-width: 430px;
+
+    border-radius: 1em;
+
+    .card-image {
+        border-radius: 1em 1em 0 0;
+        background-image: url(../images/illustration-hero.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        padding-bottom: 50%;
+    }
+    .card-content {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        border-radius: 0 0 1em 1em;
+        color: $darkBlue;
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        p {
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 1.5em;
+        }
+        .plan-display {
+            display: flex;
+            padding-top: 0.75em;
+            padding-bottom: 0.75em;
+            border-radius: 0.5em;
+            width: 100%;
+            background-color: $veryPaleBlue;
+            align-items: center;
+            margin-bottom: 1.5em;
+
+            .icon {
+                background-image: url(../images/icon-music.svg);
+                width: 3em;
+                padding-bottom: 13%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: 1em;
+            }
+            .plan-description {
+                display: flex;
+                flex-direction: column;
+                margin-left: 1em;
+                justify-content: space-around;
+                align-items: flex-start;
+                h3 {
+                    font-size: 1em;
+                }
+                p {
+                    margin-bottom: 0;
+                    color: $desaturatedBlue;
+                }
+            }
+            a {
+                color: $brightBlue;
+                margin-left: auto;
+                margin-right: 1em;
+                text-decoration: underline;
+                transition: 0.2s ease-in-out;
+            }
+            a:hover {
+                filter: brightness(2);
+            }
+        }
+        button {
+            margin-bottom: 1em;
+        }
+        .cancel {
+            text-decoration: none;
+            color: $desaturatedBlue;
+            transition: 0.2s ease-in-out;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        .cancel:hover {
+            filter: brightness(0.3);
+        }
+    }
+}

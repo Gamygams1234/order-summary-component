@@ -1,0 +1,173 @@
+body {
+  min-height: 100vh;
+  background: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  font-family: "Red Hat Display", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e0e8ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.button {
+  background-color: #3829e0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.5em;
+  width: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+  border-radius: 1em;
+}
+.card .card-image {
+  border-radius: 1em 1em 0 0;
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 50%;
+}
+.card .card-content {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  border-radius: 0 0 1em 1em;
+  color: #1f2f56;
+}
+.card .card-content h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.card .card-content p {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+.card .card-content .plan-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border-radius: 0.5em;
+  width: 100%;
+  background-color: #f5f7ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+.card .card-content .plan-display .icon {
+  background-image: url(../images/icon-music.svg);
+  width: 3em;
+  padding-bottom: 13%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 1em;
+}
+.card .card-content .plan-display .plan-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card .card-content .plan-display .plan-description h3 {
+  font-size: 1em;
+}
+.card .card-content .plan-display .plan-description p {
+  margin-bottom: 0;
+  color: #7280a7;
+}
+.card .card-content .plan-display a {
+  color: #3829e0;
+  margin-left: auto;
+  margin-right: 1em;
+  text-decoration: underline;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.card .card-content .plan-display a:hover {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+.card .card-content button {
+  margin-bottom: 1em;
+}
+.card .card-content .cancel {
+  text-decoration: none;
+  color: #7280a7;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.card .card-content .cancel:hover {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
